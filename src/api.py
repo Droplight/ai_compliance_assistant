@@ -78,4 +78,3 @@ def analyze(request: QueryRequest):
     
     result = run_pipeline(request.query, vectorstore)
     return result
-```
