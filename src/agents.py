@@ -29,7 +29,7 @@ def analyze_risk(context):
     {context}
     """
 
-    return llm(prompt)
+    return llm.invoke(prompt)
 
 # AGENT 3 — PRODUCT MANAGER OUTPUTS
 def generate_pm_outputs(context):
@@ -51,7 +51,7 @@ def generate_pm_outputs(context):
     {context}
     """
 
-    return llm(prompt)
+    return llm.invoke(prompt)
 
 # MULTI-AGENT PIPELINE
 def run_pipeline(query, vectorstore):

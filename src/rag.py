@@ -39,5 +39,5 @@ def answer_question(query, vectorstore):
     
     Question: {query}
     """
-    response = llm(prompt)
+    response = llm.invoke(prompt)
     return response
